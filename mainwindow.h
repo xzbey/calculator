@@ -20,6 +20,8 @@ public:
 private slots:
     void on_pB_open_geocalculator_clicked();
 
+    void on_pB_open_calculator_clicked();
+
 private:
     Ui::MainWindow *ui;
 };
