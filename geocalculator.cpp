@@ -89,14 +89,31 @@ QString GeoCalculator::antiRes() {
 
     if (degree < 0) degree += 360;
 
-    double alpha = int(degree),
-            min = (degree - alpha) * 60,
-            sec = (min - int(min)) * 60;
-    min = round(min); sec = round(sec);
+    int alpha = int(degree);
+
+    double min = (degree - alpha) * 60;
+    int minutes = round(min);
+
+    double sec = (min - minutes) * 60;
+    int seconds = round(sec);
+
+    if (seconds < 0)
+        seconds = 0;
+
+
+    while (seconds >= 60) {
+        seconds -= 60;
+        minutes += 1;
+    }
+
+    while (minutes >= 60) {
+        minutes -= 60;
+        alpha += 1;
+    }
 
     double s = sqrt(deltaX*deltaX + deltaY*deltaY);
 
-    return "Расстояние: " + QString::number(s, 'f', 4) + "| Угол: " + QString::number(alpha) + "'" + QString::number(min) + "''" + QString::number(sec, 'f', 4);
+    return "Расстояние: " + QString::number(s, 'f', 4) + "| Угол: " + QString::number(alpha) + "'" + QString::number(minutes) + "''" + QString::number(seconds);
 }
 
 
