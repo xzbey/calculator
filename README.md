@@ -138,17 +138,17 @@
   ![image](https://github.com/user-attachments/assets/064416a7-b6f0-4d50-be66-aaf06609b7ab)
 
 - **Обычный калькулятор**
-      *пример с функцей* `+`
+      *пример функции* `+`
   
   ![image](https://github.com/user-attachments/assets/659e5317-0524-4840-8b98-6bcd162af02b)
 
 - **Геокалькулятор**
-    - *Пример с выбором* `Прямой` *задачи*
+    - *Пример выбора* `Прямой` *задачи*
       
       ![image](https://github.com/user-attachments/assets/86b8a5a1-d9f6-4c68-8ca9-142146ba02c4)
 
 
-    - *Пример с выбором* `Обратной` *задачи*
+    - *Пример выбора* `Обратной` *задачи*
       
       ![image](https://github.com/user-attachments/assets/79ab0c43-cbdb-48e1-aa3c-4c39d9972f46)
 
